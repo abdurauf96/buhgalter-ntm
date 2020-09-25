@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SegoeUI", "Arial", sans-serif;
+  line-height: 1.4;
+  background: #F1F1F1;
+}
+
+.body-disable-overflow {
+  overflow-y: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  background: transparent;  
+  display: block;
+  padding: 0;
+  cursor: pointer;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.basic-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.slick-list {
+  padding-top: 60px;
+}

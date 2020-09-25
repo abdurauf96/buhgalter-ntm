@@ -1,0 +1,104 @@
+.feedbacks {
+  margin-bottom: 50px;
+
+  .section__title {
+    margin: 0;
+  }
+}
+
+.feedbacks__slider {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.feedbacks-slider-item {
+  width: 100%;
+}
+
+.feedbacks__item {
+  position: relative;
+  width: 500px;
+  padding: 40px;
+  background: #fff;
+  z-index: 1000;
+  margin-right: 25px;
+  margin-left: 25px;
+
+  h5 {
+    font-size: 20px;
+    margin-top: -20px;
+    margin-left: 150px;
+  }
+
+  p {
+    margin-top: 10px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+  }
+
+  img {
+    top: -50px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+
+  span {
+    display: block;
+    width: 55px;
+    height: 72px;
+    position: absolute;
+    background-image: url("../img/quote.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    right: 10px;
+    top: -27px;
+  };
+}
+
+
+
+
+@media only screen and (max-width: 450px) {
+  .feedbacks__item {
+    span {
+      width: 27.5px;
+      height: 36px;
+      top: -13.75px;
+    }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .feedbacks__item {
+    h5 {
+      font-size: 20px;
+      margin-top: -20px;
+      margin-bottom: 10px;
+      margin-left: 100px;
+    }
+    span {
+      width: 27.5px;
+      height: 36px;
+      top: -13.75px;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .feedbacks__item {
+    h5 {
+      font-size: 20px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      margin-left: 0;
+      text-align: center;
+    }
+    span {
+      width: 27.5px;
+      height: 36px;
+      top: -13.75px;
+    }
+  }
+}

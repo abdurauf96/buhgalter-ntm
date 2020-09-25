@@ -1,0 +1,102 @@
+.reviews-page {
+  .section__title {
+    padding-top: 50px;
+  }
+}
+
+.reviews-form {
+  .section__title {
+    padding-top: 50px;
+  }
+}
+
+.feedback-form {
+
+  label {
+    color: #707070;
+  }
+}
+
+.inputs-wrapper { 
+  align-items: unset;
+}
+
+.user-info {
+  width: 48%;
+  input,label {
+    display: block;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    background: transparent;
+    border-bottom: 1px solid #707070;
+    transition: 0.3s ease;
+
+    &:focus {
+      background: #fff;
+    }
+  }
+}
+
+.textarea-wrapper {
+  width: 48%;
+  label, textarea {
+    display: block;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  textarea {
+    height: 210px;
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    background: transparent;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+    background: #fff;
+
+    &:focus {
+      border: 1px solid #707070;
+    }
+  }
+}
+
+.feedback-send-btn {
+  padding: 10px 40px;
+  background: $main-color;
+  color: #fff;
+  margin-left: auto;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+
+  &:hover, &:focus {
+    transform: translateY(-5px);
+  }
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  .inputs-wrapper {
+    flex-direction: column;
+  }
+  .user-info,
+  .textarea-wrapper {
+    width: 100%;
+  }
+  .feedback-send-btn {
+    margin: 25px auto;
+  }
+}

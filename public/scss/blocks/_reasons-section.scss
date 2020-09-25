@@ -1,0 +1,140 @@
+.reasons {
+  margin-bottom: 50px;
+}
+
+.reasons-box {
+  align-items: unset;
+}
+
+.reasons__item {
+  display: block;
+  width: 23%;
+  box-shadow: 0 0 10px #dedede;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.reasons__item-top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border-bottom: 2px solid $main-color;
+  z-index: 1;
+  img {
+    width: 120px;
+  }
+
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid $main-color;
+    z-index: 2;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    background: #fff;
+  }
+}
+
+.reasons__item-bottom {
+  padding: 40px 20px;
+}
+
+.reasons__title {
+  margin-bottom: 10px;
+}
+
+.reasons__description {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+
+.footer__bottom {
+  padding: 20px 0;
+  background: #575757;
+}
+
+.search-form {
+  display: block;
+  width: 30%;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+
+  &:focus {
+    border: 2px solid $main-color;
+  }
+}
+
+.search-btn {
+  position: absolute;
+  height: 38px;
+  width: 38px;
+  background-image: url("../img/search.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  right: 5px;
+  top: 0;
+}
+
+.copyright {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+
+  span {
+    font-family: "SegoeUI", "Arial", sans-serif;
+    font-weight: bold;
+  }
+}
+
+.social-links {
+  li {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .reasons-box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .reasons__item {
+    width: 40%;
+    margin-bottom: 25px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .reasons-box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .reasons__item {
+    width: 90%;
+    margin-bottom: 25px;
+  }
+}

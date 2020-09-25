@@ -1,0 +1,62 @@
+.why-you-should-choose {
+  margin-bottom: 50px;
+}
+
+.why__item {
+  position: relative;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 100px;
+  color: #fff;
+  overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  span {
+    position: absolute;
+    font-size: 200px;
+    z-index: 1;
+    opacity: 0.2;
+    bottom: -70px;
+    left: -50px;
+    font-weight: bold;
+  }
+
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      background-image: url("../img/r#{$i}.png");
+    }
+  }
+}
+
+.courses-page {
+  padding-top: 50px;
+}
+
+
+@media only screen and (max-width: 650px) {
+  .why__item {
+    padding: 20px 40px;
+
+    span {
+      font-size: 100px;
+      bottom: -35px;
+      left: -25px;
+    }
+  }
+}

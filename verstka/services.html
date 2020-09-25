@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  
+  <div class="regform order-call-modal">
+    <div class="container">
+      <button class="btn regform-cancel order-call-cancel-btn">x</button>
+      <h3 class="regform__title">Закажите звонок у нашихконсультантов</h3>
+      <p class="regform__description">Мы свяжемся с Вами, чтобы ответит на все ваши вопросы и помочь с выбором курсов</p>
+      <form method="GET" class="reg-form">
+        <label><input type="text" placeholder="Ваше имя:" required></label>
+        <label><input type="text" placeholder="Номер телефона:" required></label>
+        <button type="submit" class="btn reg-form-submit-btn">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="regform reg-for-course-modal">
+    <div class="container">
+      <button class="btn regform-cancel reg-for-course-cancel-btn">x</button>
+      <h3 class="regform__title">Оставьте заявку прямо сейчас и получите скидку в размере от 30% до 50%</h3>
+      <p class="regform__description">Мы свяжемся с Вами, чтобы ответит на все ваши вопросы и подобрать подходяший Вам курс</p>
+      <form method="GET" class="reg-form">
+        <label><input type="text" placeholder="Ваше имя:" required></label>
+        <label><input type="text" placeholder="Номер телефона:" required></label>
+        <button type="submit" class="btn reg-form-submit-btn">Получить скидку</button>
+      </form>
+    </div>
+  </div>
+  <div class="layer"></div>
+  <header class="main-header">
+    <div class="container">
+      <div class="header__top basic-flex">
+        <a href="#" class="logo">
+          <img class="lozad logo__img" data-src="img/logo.png" alt="Logo">
+        </a>
+        <div class="contacts-box">
+          <h4>audit.progress@mail.ru</h4>
+          <a href="mailto:audit.progress@mail.ru">Написать</a>
+        </div>
+        <div class="contacts-box">
+          <h4>+998 (99) 851-80-13</h4>
+          <button class="btn order-call-btn" href="tel:+998998518013">Заказать звонок</button class="btn order-call-btn">
+        </div>
+        <a href="#" class="enter-to-webinar">Войти на вебинар</a>
+        <div class="languages">
+          <button type="button" class="btn language__option language__option--active">РУ</button>
+          <div class="languages__list">
+            <button type="button" class="btn language__option language__option--uz" data-status="disabled">O'Z</button>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <button type="button" class="btn btn-menu"><span class="hamburger"></span></button>
+        <nav class="navbar">
+          <ul class="navbar__menu basic-flex">
+            <li class="menu__item"><a href="#" class="menu__link menu__link--active">Главная</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Наши курсы</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Учебные материалы</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+            <li class="menu__item"><a href="#" class="menu__link menu__link--news">Скидки и Акции</a></li>
+          </ul>
+          <div class="responsive-box-inside-navbar">
+            <div class="contacts-box">
+              <h4>audit.progress@mail.ru</h4>
+              <a href="mailto:audit.progress@mail.ru">Написать</a>
+            </div>
+            <div class="contacts-box">
+              <h4>+998 (99) 851-80-13</h4>
+              <a class="btn order-call-btn">Заказать звонок</a>
+            </div>
+            <a href="#" class="enter-to-webinar">Войти на вебинар</a>
+          </div>
+        </nav>
+        <div class="header__slider">
+          <div class="slider__wrapper">
+            <div class="slide">
+              <h1 class="slide__title">Мы предоставляем доступное обучение для всех!</h1>
+              <p class="slide__description">Стань специалистом: Аудита, бухгалтерии, 1с бухгалтерии и аутсорсинга, зарабатывай деньги!</p>
+            </div>
+            <button type="button" class="btn reg-for-course-btn">Регистрация на курсы</button>
+          </div>
+          <div class="slider__wrapper">
+            <div class="slide">
+              <h1 class="slide__title">При заключении договора доконца июля 2020г. действует скидкана дистанционное обучение</h1>
+              <p class="slide__description">Для физических лиц 30% Для юредических лиц 30% - 50%в зависимости от суммы договора!</p>
+            </div>
+            <button type="button" class="btn reg-for-course-btn">Регистрация на курсы</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="courses">
+      <div class="container">
+        <div class="section__title basic-flex">
+          <h2>Выберите интересующий вас учебный курс</h2>
+        </div>
+        <div class="courses__box basic-flex">
+          <a href="#" class="courses__item">
+            <img src="img/c1.png" alt="course-1">
+            <div class="courses__bottom basic-flex">
+              <span class="big-order-number">01</span>
+              <h3>Курсы для начинающих 
+                бухгалтеров</h3>
+              <ul class="courses__list">
+                <li><span></span>Бухгалтерский учет «От азов до 
+                  баланса»</li>
+                <li><span></span>«1С Бухгалтерия»</li>
+              </ul>
+              <div class="course__price basic-flex">
+                <span class="price-text">Цена:</span>
+                <span class="price-amount">от <span class="price-amount-number">150 000</span> сум</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="courses__item">
+            <img src="img/c2.png" alt="course-2">
+            <div class="courses__bottom basic-flex">
+              <span class="big-order-number">02</span>
+              <h3>Повышение квалификации 
+                бухгалтеров</h3>
+              <ul class="courses__list">
+                <li><span></span>Повышение квалификации руководителя 
+                  (главного бухгалтера) службы 
+                  бухгалтерского учета</li>
+              </ul>
+              <div class="course__price basic-flex">
+                <span class="price-text">Цена:</span>
+                <span class="price-amount">от <span class="price-amount-number">150 000</span> сум</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="courses__item">
+            <img src="img/c3.png" alt="course-3">
+            <div class="courses__bottom basic-flex">
+              <span class="big-order-number">03</span>
+              <h3>Другие курсы</h3>
+              <ul class="courses__list">
+                <li><span></span>Аудиторские курсы утверждённые 
+                  министерством финансов РУз (200 ч.)</li>
+              </ul>
+              <div class="course__price basic-flex">
+                <span class="price-text">Цена:</span>
+                <span class="price-amount">от <span class="price-amount-number">150 000</span> сум</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="section__title basic-flex">
+          <h2>Международные профессиональные курсы</h2>
+        </div>
+
+        <div class="courses__box courses__box--2 basic-flex">
+          <a href="#" class="courses__item">
+            <img src="img/c1.png" alt="course-1">
+            <div class="courses__bottom basic-flex">
+              <span class="big-order-number">04</span>
+              <h3>CAP (Certified Accounting 
+                Practitioner)</h3>
+              <ul class="courses__list">
+                <li><span></span>Финансовый учёт-1.</li>
+                <li><span></span>Управленческий учёт-1.</li>
+                <li><span></span>Налоги и налогообложение</li>
+                <li><span></span>Правовое регулирование  
+                  предпринимательской деятельности</li>
+              </ul>
+              <div class="course__price basic-flex">
+                <span class="price-text">Цена:</span>
+                <span class="price-amount">от <span class="price-amount-number">150 000</span> сум</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="courses__item">
+            <img src="img/c2.png" alt="course-2">
+            <div class="courses__bottom basic-flex">
+              <span class="big-order-number">05</span>
+              <h3>CIPA (Certified International 
+                Professional Accountant)</h3>
+              <ul class="courses__list">
+                <li><span></span>Финансовый учёт-2.</li>
+                <li><span></span>Управленческий учёт-2.</li>
+                <li><span></span>Финансовый менеджмент.</li>
+                <li><span></span>Аудит</li>
+              </ul>
+              <div class="course__price basic-flex">
+                <span class="price-text">Цена:</span>
+                <span class="price-amount">от <span class="price-amount-number">150 000</span> сум</span>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="courses__item">
+            <img src="img/c3.png" alt="course-3">
+            <div class="courses__bottom basic-flex">
+              <span class="big-order-number">06</span>
+              <h3>Другие курсы</h3>
+              <ul class="courses__list">
+                <li><span></span>DipIFR.(75 ч.) ACCA Diploma in the International Financial Reporting (Диплом по Международной  Финансовой отчётности)</li>
+              </ul>
+              <div class="course__price basic-flex">
+                <span class="price-text">Цена:</span>
+                <span class="price-amount">от <span class="price-amount-number">150 000</span> сум</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14451.664125144485!2d71.78024722619084!3d40.406898183209016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x65de632b6ed763bf!2sFerghana%20Audit%20Progress!5e0!3m2!1suz!2s!4v1590567518754!5m2!1suz!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__top-wrapper basic-flex">
+          <div class="about-company">
+            <h4>О компании</h4>
+            <p>«Fergana Audit Progress» ("Центр международного учета и аудита")– это независимый учебный Центр, организованный при Палате Аудиторов Ферганского</p>
+          </div>
+          <div class="contact-details">
+            <h4>Обратная связь</h4>
+            <a href="mailto:audit.progress@mail.ru">audit.progress@mail.ru</a>
+            <a href="tel:+998998518013">+998 (99) 851-80-13</a>
+          </div>
+          <div class="site-navigation">
+            <h4>Навигация по сайту</h4>
+            <div class="navigation-links basic-flex">
+              <a href="#">Курсы</a>
+              <a href="#">Вакансии</a>
+              <a href="#">Лицензии</a>
+              <a href="#">Профессии</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-wrapper basic-flex">
+          <form method="GET" class="search-form">
+            <input class="search-input" type="text" placeholder="Поиск">
+            <button class="search-btn btn" type="submit"></button>
+          </form>
+          <p class="copyright">Разработка сайта - студия <span>webmasters</span> 2020 год</p>
+          <ul class="social-links basic-flex">
+            <li><a href="#"><img src="img/telegram.png" alt="Telegram"></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="js/jquery-3.5.1.min.js"></script>
+  <script defer src="js/lozad.min.js"></script>
+  <script defer src="js/jquery.fancybox.min.js"></script>
+  <script defer src="js/slick.min.js"></script>
+  <script defer src="js/main.js"></script>
+
+</body>
+</html>
